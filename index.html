@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Набор обучающих игрушек для незрячих детей</title>
+  <meta name="description" content="Одностраничный сайт проекта: 3D-печатные кубики для тактильного изучения букв и шрифта Брайля." />
+  <link rel="icon" href="assets/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html{scroll-behavior:smooth}
+    .radial-bg{
+      background:
+        radial-gradient(900px 900px at 10% 10%, rgba(56,189,248,.12), transparent 60%),
+        radial-gradient(900px 900px at 90% 20%, rgba(168,85,247,.12), transparent 60%),
+        radial-gradient(700px 700px at 10% 90%, rgba(244,63,94,.12), transparent 60%);
+    }
+  </style>
+
+  <style id="email-copy-style">
+    .no-hover .btn-label-default{transform:none!important;opacity:1!important}
+    .no-hover .btn-label-alt{opacity:0!important}
+  </style>
+
+</head>
+<body class="min-h-screen bg-neutral-950 text-neutral-100">
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/70 border-b border-white/10">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="assets/favicon.svg">
+        <div class="font-semibold tracking-tight">BrailleTale</div>
+      </a>
+      <nav class="hidden md:flex items-center gap-2">
+        <a href="#models" class="px-4 py-2 rounded-xl bg-gradient-to-r from-sky-500 to-violet-500 hover:opacity-90 transition active:scale-[.98] shadow-lg shadow-sky-500/20">3D модели</a>
+        <a href="#info" class="px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:opacity-90 transition active:scale-[.98] shadow-lg shadow-emerald-500/20">Общая инфо</a>
+        
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden border-b border-white/10">
+    <div class="pointer-events-none absolute inset-0 radial-bg"></div>
+    <div class="relative mx-auto max-w-6xl px-4 py-16 md:py-20">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">
+          <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Набор обучающих игрушек для незрячих детей
+        </div>
+        <h1 class="mt-4 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          BrailleTale
+        </h1>
+        <p class="mt-4 text-white/80 text-lg md:text-xl">
+          Один комплект — множество возможностей: тактильное изучение букв русского алфавита и шрифта Брайля через серию прочных 3D-печатных кубиков.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          
+          <a href="#features" class="px-5 py-3 rounded-2xl bg-gradient-to-r from-teal-500 to-emerald-500 font-medium shadow-xl shadow-emerald-500/20 hover:brightness-110 active:scale-95">Особенности набора</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="mx-auto max-w-6xl px-4 py-10 md:py-14">
+    <article class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <div class="lg:col-span-8">
+        <section id="info" class="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Общая информация</h2>
+          <p class="mt-4 text-white/80 leading-relaxed">
+            Данный набор состоит из 6 кубиков, на сторонах которых находятся буквы русского алфавита слева и их кодировка в шифре Брайля справа сверху. Каждый кубик имеет размеры 6×6×6 см и сделаны из АБС-пластика, со стенкой 0,25 см и заполнением внутренней полости 10%.
+          </p>
+        </section>
+
+        <section id="features" class="mt-8 rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Особенности кубиков</h2>
+          <p class="mt-4 text-white/80">Так как в русском алфавите 33 буквы, кубики разделены на 3 вида:</p>
+          <ul class="mt-4 space-y-2">
+            <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-sky-400"></span><div><strong>Кубики с буквами на всех шести сторонах</strong> — 4 шт.</div></li>
+            <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-violet-400"></span><div><strong>Кубики с буквами на пяти сторонах</strong> — 1 шт.</div></li>
+            <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-rose-400"></span><div><strong>Кубики с буквами на четырёх сторонах</strong> — 1 шт.</div></li>
+          </ul>
+        </section>
+
+        <section id="models" class="mt-8 rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight">3D модели кубиков</h2>
+          <p class="mt-4 text-white/80">Все кубики были вручную смоделированы в программе Blender.</p>
+          <h3 class="mt-6 text-xl font-semibold tracking-tight">Скриншоты каждой модели кубиков:</h3>
+          
+<a href="assets/models/cubes.zip" download
+   class="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-xl bg-gradient-to-r from-rose-500 to-orange-500 hover:opacity-90 active:scale-95">Скачать все модели</a>
+<div class="mt-4 grid sm:grid-cols-2 gap-4">
+            <!-- Card gallery inserted here -->
+            
+<div class="group rounded-2xl border border-white/10 bg-neutral-900/70 p-4 hover:border-white/20 transition">
+  <img id="main-model1" src="assets/images/model1-angle1.png" class="cursor-pointer" onclick="openLightbox(['assets/images/model1-angle1.png','assets/images/model1-angle2.png','assets/images/model1-angle3.png'],0)" alt="Куб АНИМКХ" class="aspect-video w-full rounded-xl object-cover object-center opacity-90 group-hover:opacity-100 transition" onclick="openLightbox('model1', 1)" role="button" tabindex="0" aria-label="Открыть лайтбокс" />
+  <div class="mt-3 flex items-center justify-between gap-3">
+    <div class="font-medium">Куб АНИМКХ</div>
+    <a class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-sm hover:opacity-90 active:scale-95"
+       href="assets/models/cube1.stl" download>Скачать модель</a>
+  </div>
+  <div class="mt-3 flex items-center gap-2">
+    <button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model1').src='assets/images/model1-angle1.png'">
+               <img src="assets/images/model1-angle1.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model1-angle1.png','assets/images/model1-angle2.png','assets/images/model1-angle3.png'],0)" alt="Куб АНИМКХ — ракурс 1" class="h-full w-full object-cover" />
+             </button><button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model1').src='assets/images/model1-angle2.png'">
+               <img src="assets/images/model1-angle2.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model1-angle1.png','assets/images/model1-angle2.png','assets/images/model1-angle3.png'],1)" alt="Куб АНИМКХ — ракурс 2" class="h-full w-full object-cover" />
+             </button><button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model1').src='assets/images/model1-angle3.png'">
+               <img src="assets/images/model1-angle3.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model1-angle1.png','assets/images/model1-angle2.png','assets/images/model1-angle3.png'],2)" alt="Куб АНИМКХ — ракурс 3" class="h-full w-full object-cover" />
+             </button>
+  </div>
+</div>
+
+
+<div class="group rounded-2xl border border-white/10 bg-neutral-900/70 p-4 hover:border-white/20 transition">
+  <img id="main-model2" src="assets/images/model2-angle1.png" class="cursor-pointer" onclick="openLightbox(['assets/images/model2-angle1.png','assets/images/model2-angle2.png','assets/images/model2-angle3.png'],0)" alt="Куб ЧШЩЛЦЖ" class="aspect-video w-full rounded-xl object-cover object-center opacity-90 group-hover:opacity-100 transition" onclick="openLightbox('model2', 1)" role="button" tabindex="0" aria-label="Открыть лайтбокс" />
+  <div class="mt-3 flex items-center justify-between gap-3">
+    <div class="font-medium">Куб ЧШЩЛЦЖ</div>
+    <a class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-sm hover:opacity-90 active:scale-95"
+       href="assets/models/cube2.stl" download>Скачать модель</a>
+  </div>
+  <div class="mt-3 flex items-center gap-2">
+    <button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model2').src='assets/images/model2-angle1.png'">
+               <img src="assets/images/model2-angle1.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model2-angle1.png','assets/images/model2-angle2.png','assets/images/model2-angle3.png'],0)" alt="Куб ЧШЩЛЦЖ — ракурс 1" class="h-full w-full object-cover" />
+             </button><button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model2').src='assets/images/model2-angle2.png'">
+               <img src="assets/images/model2-angle2.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model2-angle1.png','assets/images/model2-angle2.png','assets/images/model2-angle3.png'],1)" alt="Куб ЧШЩЛЦЖ — ракурс 2" class="h-full w-full object-cover" />
+             </button><button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model2').src='assets/images/model2-angle3.png'">
+               <img src="assets/images/model2-angle3.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model2-angle1.png','assets/images/model2-angle2.png','assets/images/model2-angle3.png'],2)" alt="Куб ЧШЩЛЦЖ — ракурс 3" class="h-full w-full object-cover" />
+             </button>
+  </div>
+</div>
+
+
+<div class="group rounded-2xl border border-white/10 bg-neutral-900/70 p-4 hover:border-white/20 transition">
+  <img id="main-model3" src="assets/images/model3-angle1.png" class="cursor-pointer" onclick="openLightbox(['assets/images/model3-angle1.png','assets/images/model3-angle2.png','assets/images/model3-angle3.png'],0)" alt="Куб БЬЪЫЬР" class="aspect-video w-full rounded-xl object-cover object-center opacity-90 group-hover:opacity-100 transition" onclick="openLightbox('model3', 1)" role="button" tabindex="0" aria-label="Открыть лайтбокс" />
+  <div class="mt-3 flex items-center justify-between gap-3">
+    <div class="font-medium">Куб БЬЪЫЬР</div>
+    <a class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-sm hover:opacity-90 active:scale-95"
+       href="assets/models/cube3.stl" download>Скачать модель</a>
+  </div>
+  <div class="mt-3 flex items-center gap-2">
+    <button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model3').src='assets/images/model3-angle1.png'">
+               <img src="assets/images/model3-angle1.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model3-angle1.png','assets/images/model3-angle2.png','assets/images/model3-angle3.png'],0)" alt="Куб БЬЪЫЬР — ракурс 1" class="h-full w-full object-cover" />
+             </button><button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model3').src='assets/images/model3-angle2.png'">
+               <img src="assets/images/model3-angle2.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model3-angle1.png','assets/images/model3-angle2.png','assets/images/model3-angle3.png'],1)" alt="Куб БЬЪЫЬР — ракурс 2" class="h-full w-full object-cover" />
+             </button><button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model3').src='assets/images/model3-angle3.png'">
+               <img src="assets/images/model3-angle3.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model3-angle1.png','assets/images/model3-angle2.png','assets/images/model3-angle3.png'],2)" alt="Куб БЬЪЫЬР — ракурс 3" class="h-full w-full object-cover" />
+             </button>
+  </div>
+</div>
+
+
+<div class="group rounded-2xl border border-white/10 bg-neutral-900/70 p-4 hover:border-white/20 transition">
+  <img id="main-model4" src="assets/images/model4-angle1.png" class="cursor-pointer" onclick="openLightbox(['assets/images/model4-angle1.png','assets/images/model4-angle2.png','assets/images/model4-angle3.png'],0)" alt="Куб ВОЗФЮС" class="aspect-video w-full rounded-xl object-cover object-center opacity-90 group-hover:opacity-100 transition" onclick="openLightbox('model4', 1)" role="button" tabindex="0" aria-label="Открыть лайтбокс" />
+  <div class="mt-3 flex items-center justify-between gap-3">
+    <div class="font-medium">Куб ВОЗФЮС</div>
+    <a class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-sm hover:opacity-90 active:scale-95"
+       href="assets/models/cube4.stl" download>Скачать модель</a>
+  </div>
+  <div class="mt-3 flex items-center gap-2">
+    <button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model4').src='assets/images/model4-angle1.png'">
+               <img src="assets/images/model4-angle1.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model4-angle1.png','assets/images/model4-angle2.png','assets/images/model4-angle3.png'],0)" alt="Куб ВОЗФЮС — ракурс 1" class="h-full w-full object-cover" />
+             </button><button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model4').src='assets/images/model4-angle2.png'">
+               <img src="assets/images/model4-angle2.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model4-angle1.png','assets/images/model4-angle2.png','assets/images/model4-angle3.png'],1)" alt="Куб ВОЗФЮС — ракурс 2" class="h-full w-full object-cover" />
+             </button><button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model4').src='assets/images/model4-angle3.png'">
+               <img src="assets/images/model4-angle3.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model4-angle1.png','assets/images/model4-angle2.png','assets/images/model4-angle3.png'],2)" alt="Куб ВОЗФЮС — ракурс 3" class="h-full w-full object-cover" />
+             </button>
+  </div>
+</div>
+
+
+<div class="group rounded-2xl border border-white/10 bg-neutral-900/70 p-4 hover:border-white/20 transition">
+  <img id="main-model5" src="assets/images/model5-angle1.png" class="cursor-pointer" onclick="openLightbox(['assets/images/model5-angle1.png','assets/images/model5-angle2.png','assets/images/model5-angle3.png'],0)" alt="Куб ДЭЯУЁ" class="aspect-video w-full rounded-xl object-cover object-center opacity-90 group-hover:opacity-100 transition" onclick="openLightbox('model5', 1)" role="button" tabindex="0" aria-label="Открыть лайтбокс" />
+  <div class="mt-3 flex items-center justify-between gap-3">
+    <div class="font-medium">Куб ДЭЯУЁ</div>
+    <a class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-sm hover:opacity-90 active:scale-95"
+       href="assets/models/cube5.stl" download>Скачать модель</a>
+  </div>
+  <div class="mt-3 flex items-center gap-2">
+    <button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model5').src='assets/images/model5-angle1.png'">
+               <img src="assets/images/model5-angle1.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model5-angle1.png','assets/images/model5-angle2.png'],0)" alt="Куб ДЭЯУЁ — ракурс 1" class="h-full w-full object-cover" />
+             </button><button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model5').src='assets/images/model5-angle2.png'">
+               <img src="assets/images/model5-angle2.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model5-angle1.png','assets/images/model5-angle2.png'],1)" alt="Куб ДЭЯУЁ — ракурс 2" class="h-full w-full object-cover" />
+             </button>
+  </div>
+</div>
+
+
+<div class="group rounded-2xl border border-white/10 bg-neutral-900/70 p-4 hover:border-white/20 transition">
+  <img id="main-model6" src="assets/images/model6-angle1.png" class="cursor-pointer" onclick="openLightbox(['assets/images/model6-angle1.png','assets/images/model6-angle2.png','assets/images/model6-angle3.png'],0)" alt="Куб ГПЕТ" class="aspect-video w-full rounded-xl object-cover object-center opacity-90 group-hover:opacity-100 transition" onclick="openLightbox('model6', 1)" role="button" tabindex="0" aria-label="Открыть лайтбокс" />
+  <div class="mt-3 flex items-center justify-between gap-3">
+    <div class="font-medium">Куб ГПЕТ</div>
+    <a class="px-3 py-1.5 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-500 text-sm hover:opacity-90 active:scale-95"
+       href="assets/models/cube6.stl" download>Скачать модель</a>
+  </div>
+  <div class="mt-3 flex items-center gap-2">
+    <button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model6').src='assets/images/model6-angle1.png'">
+               <img src="assets/images/model6-angle1.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model6-angle1.png','assets/images/model6-angle2.png'],0)" alt="Куб ГПЕТ — ракурс 1" class="h-full w-full object-cover" />
+             </button><button class="h-14 w-20 rounded-lg overflow-hidden border border-white/10 hover:border-white/30 transition"
+                 onclick="document.getElementById('main-model6').src='assets/images/model6-angle2.png'">
+               <img src="assets/images/model6-angle2.png" class="cursor-pointer h-full w-full object-cover" onclick="openLightbox(['assets/images/model6-angle1.png','assets/images/model6-angle2.png'],1)" alt="Куб ГПЕТ — ракурс 2" class="h-full w-full object-cover" />
+             </button>
+  </div>
+</div>
+
+          </div>
+        </section>
+      </div>
+
+      <aside class="lg:col-span-4 space-y-4">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <h3 class="text-lg font-semibold tracking-tight">Быстрые действия</h3>
+          <div class="mt-4 grid grid-cols-1 gap-3">
+            
+            <a href="#contact" class="px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-lime-500 text-center hover:opacity-90 active:scale-95">Связаться</a>
+            <a href="#faq" class="px-4 py-2 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 text-center hover:opacity-90 active:scale-95">FAQ</a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6" id="contact">
+          <h3 class="text-lg font-semibold tracking-tight">Контакты</h3>
+          <p class="mt-2 text-white/70 text-sm">Добавьте email/телеграм для обратной связи.</p>
+          
+        
+  
+<div class="mt-4 flex flex-col gap-2">
+  <button id="emailBtn"
+    class="group relative w-full inline-flex items-center justify-center px-4 py-2 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:opacity-90 active:scale-95 overflow-hidden"
+    onclick="copyEmail('andy.is.backk.bss@gmail.com', this)" onmouseleave="resetEmailLabel(this)">
+    <span class="btn-label-default transition-all duration-200 ease-out group-hover:-translate-y-1 group-hover:opacity-0">Почта</span>
+    <span class="btn-label-alt absolute transition-all duration-200 ease-out translate-y-1 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">andy.is.backk.bss@gmail.com</span>
+	</button>
+  <a
+    class="group relative w-full inline-flex items-center justify-center px-4 py-2 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 hover:opacity-90 active:scale-95 overflow-hidden"
+    href="https://vk.com/andyisbackk" target="_blank" rel="noopener">
+    <span class="vk-label-default transition-all duration-200 ease-out group-hover:-translate-y-1 group-hover:opacity-0">ВКонтакте</span>
+    <span class="vk-label-hover absolute transition-all duration-200 ease-out translate-y-1 opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
+      @andyisbackk
+    </span>
+  </a>
+</div>
+
+
+</div>
+<div id="miracle-cubes" class="mt-4 rounded-2xl border border-white/10 bg-white/5 p-6">
+  <h3 class="text-lg font-semibold tracking-tight">Чудо кубики</h3>
+  <div class="mt-3 rounded-xl overflow-hidden">
+    <script async src="https://telegram.org/js/telegram-widget.js?22"
+            data-telegram-post="providenie_fond/1296"
+            data-width="100%"
+            data-dark="1"></script>
+  </div>
+</div>
+</div>
+
+
+</div>
+      </aside>
+    </article>
+
+    <section id="faq" class="mt-10 rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">FAQ</h2>
+      <div class="mt-4 grid md:grid-cols-2 gap-4">
+        <details class="rounded-xl border-2 border-emerald-500/60 bg-neutral-900/70 p-4 ring-1 ring-emerald-500/20 open:shadow-lg" >
+          <summary class="cursor-pointer font-semibold text-emerald-300">Печать</summary>
+          <div class="mt-3 space-y-4 text-white/80 text-sm">
+            <div>
+              <div class="font-medium text-white">Самостоятельно</div>
+              <p class="mt-1">Для печати кубиков на Вашем 3D принтере Вам стоит скачать все модели и воспользоваться руководством по печати для Вашего принтера.</p>
+            </div>
+            <div>
+              <div class="font-medium text-white">В печатной мастерской</div>
+              <p class="mt-1">Для печати в мастерской Вам следует предоставить ей следующую информацию:</p>
+              <ul class="list-disc pl-5 mt-2 space-y-1">
+                <li>Количество кубиков</li>
+                <li>Их размеры (показанные на картинках кубики имеют ребро 6 см)</li>
+                <li>Вид пластика</li>
+                <li>Толщина стенки</li>
+                <li>Заполнение кубиков</li>
+                <li>Цвет (по желанию)</li>
+                <li>Модели кубиков, которые можно скачать на этом сайте</li>
+              </ul>
+              <p class="mt-3">Пример электронного письма в печатную мастерскую <a href="https://3d-zakaz.ru/" target="_blank" rel="noopener" class="underline decoration-emerald-400 hover:text-emerald-300">3d-zakaz.ru</a> для печати одного из наборов кубиков:</p>
+              <div class="mt-2 rounded-2xl border border-emerald-500/30 bg-gradient-to-r from-emerald-900/30 to-teal-900/30 p-4 shadow-inner">
+                <div class="text-emerald-300 text-xs uppercase tracking-wide mb-2">Шаблон письма</div>
+                <blockquote class="whitespace-pre-line text-white/90">Добрый день,
+
+Я хотел бы распечатать 6 кубов 6x6x6 см из ABS, стенкой 2,5 мм, заполнением 10% и белым цветом окраски.Я хотел бы распечатать 6 кубов 6x6x6 см из ABS, стенкой 2,5 мм, заполнением 10% и белым цветом окраски. Прикладываю архив с моделями.</blockquote>
+              </div>
+            </div>
+          </div>
+        </details>
+
+        <details class="rounded-xl border border-white/10 bg-neutral-900/70 p-4">
+          <summary class="cursor-pointer font-medium">Из чего печатались кубики?</summary>
+          <p class="mt-2 text-white/70 text-sm">АБС-пластик, стенка 0,25 см, заполнение 10%.</p>
+        </details>
+        <details class="rounded-xl border border-white/10 bg-neutral-900/70 p-4">
+          <summary class="cursor-pointer font-medium">Какой размер кубиков?</summary>
+          <p class="mt-2 text-white/70 text-sm">Каждый кубик 6×6×6 см.</p>
+        </details>
+      </div>
+    </section>
+  
+
+</main>
+
+  <footer class="mt-12 border-t border-white/10">
+    <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-white/50 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>© <span id="year"></span> BrailleTale </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Lightbox -->
+  <div id="lightbox-overlay" class="fixed inset-0 z-[60] hidden bg-black/80 backdrop-blur-sm">
+    <button class="absolute top-4 right-4 px-3 py-1.5 rounded-lg bg-white/10 text-white hover:bg-white/20" onclick="closeLightbox()" aria-label="Закрыть">✕</button>
+    <div class="h-full w-full flex items-center justify-center px-4">
+      <button id="lb-prev" class="hidden sm:inline-flex mr-4 px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20" onclick="prevImage()" aria-label="Предыдущий">⟨</button>
+      <img id="lightbox-image" src="" alt="Просмотр модели" class="max-h-[85vh] max-w-[92vw] rounded-xl shadow-2xl" />
+      <button id="lb-next" class="hidden sm:inline-flex ml-4 px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20" onclick="nextImage()" aria-label="Следующий">⟩</button>
+    </div>
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/80 text-sm">
+      <span id="lb-caption"></span>
+    </div>
+  </div>
+
+
+  <script>
+  /* LIGHTBOX_SCRIPT */
+  const GALLERY = {"model1": ["assets/images/model1-angle1.png", "assets/images/model1-angle2.png", "assets/images/model1-angle3.png"], "model2": ["assets/images/model2-angle1.png", "assets/images/model2-angle2.png", "assets/images/model2-angle3.png"], "model3": ["assets/images/model3-angle1.png", "assets/images/model3-angle2.png", "assets/images/model3-angle3.png"], "model4": ["assets/images/model4-angle1.png", "assets/images/model4-angle2.png", "assets/images/model4-angle3.png"], "model5": ["assets/images/model5-angle1.png", "assets/images/model5-angle2.png", "assets/images/model5-angle3.png"], "model6": ["assets/images/model6-angle1.png", "assets/images/model6-angle2.png", "assets/images/model6-angle3.png"]};
+  let lbState = { slug: null, index: 0 };
+
+  function openLightbox(slug, angleIndex) {
+    // angleIndex is 1-based in our calls; convert to 0-based
+    lbState.slug = slug;
+    lbState.index = Math.max(0, Math.min((GALLERY[slug]?.length||1)-1, (angleIndex|0)-1));
+    const overlay = document.getElementById('lightbox-overlay');
+    const img = document.getElementById('lightbox-image');
+    const cap = document.getElementById('lb-caption');
+    updateLightboxImage();
+    overlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function updateLightboxImage() {
+    const imgs = GALLERY[lbState.slug] || [];
+    const src = imgs[lbState.index] || '';
+    const img = document.getElementById('lightbox-image');
+    const cap = document.getElementById('lb-caption');
+    img.src = src;
+    cap.textContent = (lbState.slug || '') + ' — ракурс ' + (lbState.index + 1) + '/' + imgs.length;
+  }
+
+  function closeLightbox() {
+    const overlay = document.getElementById('lightbox-overlay');
+    overlay.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  function nextImage() {
+    const imgs = GALLERY[lbState.slug] || [];
+    if (!imgs.length) return;
+    lbState.index = (lbState.index + 1) % imgs.length;
+    updateLightboxImage();
+  }
+
+  function prevImage() {
+    const imgs = GALLERY[lbState.slug] || [];
+    if (!imgs.length) return;
+    lbState.index = (lbState.index - 1 + imgs.length) % imgs.length;
+    updateLightboxImage();
+  }
+
+  // Keyboard controls
+  window.addEventListener('keydown', (e) => {
+    const overlay = document.getElementById('lightbox-overlay');
+    if (overlay.classList.contains('hidden')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') nextImage();
+    if (e.key === 'ArrowLeft') prevImage();
+  });
+
+  // Close on backdrop click (but not when clicking the image or buttons)
+  document.addEventListener('click', (e) => {
+    const overlay = document.getElementById('lightbox-overlay');
+    if (overlay.classList.contains('hidden')) return;
+    const inside = e.target.closest('#lightbox-image, #lb-prev, #lb-next, [aria-label="Закрыть"]');
+    if (!inside) closeLightbox();
+  });
+  </script>
+
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50">
+    <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-3xl">&times;</button>
+    <button onclick="prevImage()" class="absolute left-4 text-white text-3xl">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Просмотр изображения" class="max-h-[90%] max-w-[90%] rounded-lg shadow-2xl" />
+    <button onclick="nextImage()" class="absolute right-4 text-white text-3xl">&#10095;</button>
+  </div>
+
+  <script>
+    let currentImages = [];
+    let currentIndex = 0;
+    function openLightbox(imgs, index){
+      currentImages = imgs;
+      currentIndex = index;
+      document.getElementById('lightbox-img').src = imgs[index];
+      document.getElementById('lightbox').classList.remove('hidden');
+      document.getElementById('lightbox').classList.add('flex');
+    }
+    function closeLightbox(){
+      document.getElementById('lightbox').classList.add('hidden');
+      document.getElementById('lightbox').classList.remove('flex');
+    }
+    function prevImage(){
+      if(currentImages.length){
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        document.getElementById('lightbox-img').src = currentImages[currentIndex];
+      }
+    }
+    function nextImage(){
+      if(currentImages.length){
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        document.getElementById('lightbox-img').src = currentImages[currentIndex];
+      }
+    }
+  </script>
+
+  <script>
+    async 
+}
+  if(alt){
+    alt.classList.remove('opacity-0');
+    if(!alt.classList.contains('group-hover:translate-y-0')) alt.classList.add('group-hover:translate-y-0');
+    if(!alt.classList.contains('group-hover:opacity-100')) alt.classList.add('group-hover:opacity-100');
+  }
+}, 1500);
+      }
+    });
+  } catch(e){
+    alert(addr);
+  }
+}</script>
+
+  <script id="email-copy-fix">
+  (function(){
+    const btn = document.getElementById('emailBtn');
+    if(!btn) return;
+    const def = btn.querySelector('.btn-label-default');
+    const alt = btn.querySelector('.btn-label-alt');
+    const email = (alt && alt.textContent.trim()) || 'andy.is.backk.bss@gmail.com';
+
+    // ensure hover swap using Tailwind group classes if present; otherwise simulate via show/hide
+    btn.addEventListener('click', async function(ev){
+      ev.preventDefault();
+      // Try modern API
+      let ok = false;
+      try{
+        await navigator.clipboard.writeText(email);
+        ok = true;
+      }catch(e){}
+      if(!ok){
+        // Fallback
+        try{
+          const ta = document.createElement('textarea');
+          ta.value = email;
+          ta.style.position='fixed'; ta.style.opacity='0'; ta.style.pointerEvents='none';
+          document.body.appendChild(ta);
+          ta.focus(); ta.select();
+          try{ ok = document.execCommand('copy'); }catch(e){ ok=false; }
+          document.body.removeChild(ta);
+        }catch(e){ ok=false; }
+      }
+      // UI feedback
+      if(def){
+        def.textContent = 'Скопировано!';
+      }
+      // lock hover to show default label
+      btn.classList.add('no-hover');
+      // unlock after delay
+      setTimeout(()=>{
+        // return default label to "Почта"
+        if(def){ def.textContent = 'Почта'; }
+        btn.classList.remove('no-hover');
+      }, 1500);
+    });
+
+    // On mouse leave, revert to default if needed
+    btn.addEventListener('mouseleave', function(){
+      if(def && def.textContent !== 'Почта') def.textContent = 'Почта';
+      btn.classList.remove('no-hover');
+    });
+  })();
+  </script>
+
+</body>
+</html>
+
